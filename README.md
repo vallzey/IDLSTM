@@ -1,5 +1,9 @@
 # IDLSTM
 
+## Introduction
+
+This project is the implementation of the paper "Time-aware Sequence Model for Next Item Recommendation".
+
 ## Requirments
 
 The code is tested in the following envirenment.  
