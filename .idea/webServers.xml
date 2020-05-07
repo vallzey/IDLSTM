@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0b64abb4-98b5-4c8b-b092-8b758773da59" name="mf-lstm" url="http://10.1.21.99">
+        <fileTransfer host="10.1.21.99" port="22" rootFolder="/home/vallzey" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="d76eeb33-d2b3-4716-bb4a-2b238eb917b7" name="mf-lstm-417" url="http://192.168.177.211">
+        <fileTransfer host="192.168.177.211" port="22" rootFolder="/home/xdw" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
