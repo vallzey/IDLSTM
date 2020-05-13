@@ -215,7 +215,7 @@ test_data_length = test_data['x'].shape[1]
 
 logging.info("Test x shape {}".format(test_data['x'].shape))
 # 此时test_data['x']是numpy类型
-# 而train_data['x']是list类型 不知道为什么?
+而train_data['x']是list类型 不知道为什么?
 logging.info("Train x length {}".format(len(train_data['x'])))
 
 
@@ -226,18 +226,18 @@ def main(num_epochs=NUM_EPOCHS, vocab_size=VOCAB_SIZE):
     # InputLayer，它可用于表示网络的输入。张量的第一个维度通常是批量维度
     l_in = lasagne.layers.InputLayer(shape=(None, None, NDIM))
 
-    # logging.info("读取embedding模型 ...")
-    # w = pickle.load(open('G_1050', 'rb')).astype(np.float32)
-    # (i, o) = w.shape
-    #
-    # l_in2 = lasagne.layers.DenseLayer(l_in, num_units=o, W=lasagne.init.Normal(),
-    #                                   num_leading_axes=2, nonlinearity=None)
-
-    units = 128
-    logging.info("Embedding num_units : {}".format(units))
-
-    l_in2 = lasagne.layers.DenseLayer(l_in, num_units=units, W=lasagne.init.Normal(),
+    logging.info("读取embedding模型 ...")
+    w = pickle.load(open('G_1050', 'rb')).astype(np.float32)
+    (i, o) = w.shape
+    
+    l_in2 = lasagne.layers.DenseLayer(l_in, num_units=o, W=w,
                                       num_leading_axes=2, nonlinearity=None)
+
+#     units = 128
+#     logging.info("Embedding num_units : {}".format(units))
+
+#     l_in2 = lasagne.layers.DenseLayer(l_in, num_units=units, W=lasagne.init.Normal(),
+#                                       num_leading_axes=2, nonlinearity=None)
 
     # l_in2 = lasagne.layers.EmbeddingLayer(l_in, input_size=i, output_size=o, W=w)
 
