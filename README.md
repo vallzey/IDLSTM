@@ -19,6 +19,29 @@ pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
 pip install -v pandas==0.18.1
 ```
 ## Train and Test
+
+### RNN
+
+```bash
+sh vtrain_game_rnn_pos_500_1000.sh
+
+
+### LSTM
+
+```bash
+sh vtrain_game_lstm_pos_500_1000.sh
+
+
+### LSTM with time
+
+```bash
+sh vtrain_game_lstm_t_pos_500_1000.sh
+
+### Time-LSTM
+
+```bash
+sh vtrain_game_tlstm2_pos_500_1000.sh
+
 ### IDLSTM
 
 ```bash
