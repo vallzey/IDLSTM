@@ -55,3 +55,8 @@ sh vtrain_game_dlstm_pos_500_1000.sh
 ```bash
 sh vtrain_game_dlstm_emcp_pos_500_1000.sh
 ```
+
+## NOTE
+
+If you want to use this code, please process the data into the same format as the example.
+The data is placed in preprocess/data.
